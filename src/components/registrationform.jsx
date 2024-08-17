@@ -43,7 +43,7 @@ const RegistrationForm = () => {
     // Check if the email input is the one being changed
     if (name === 'email') {
       // Validate that the email ends with .iujaipur.edu.in
-      if (!value.endsWith('@iujaipur.edu.in')) {
+      if (value.endsWith('@iujaipur.edu.in')) {
         // Optionally, show an error message or adjust the input style
         console.log('Email must end with .iujaipur.edu.in');
       }
