@@ -36,16 +36,15 @@ const RegistrationForm = () => {
         });
        
   };
-
-  const handleemail = (e) => {
+  const handleEmail = (e) => {
     const { name, value } = e.target;
   
     // Check if the email input is the one being changed
     if (name === 'email') {
       // Validate that the email ends with .iujaipur.edu.in
-      if (value.endsWith('@iujaipur.edu.in')) {
-        // Optionally, show an error message or adjust the input style
-        console.log('Email must end with .iujaipur.edu.in');
+      if (!value.endsWith('@iujaipur.edu.in')) {
+        // Show an error message or adjust the input style
+        console.log('Email must end with @iujaipur.edu.in');
       }
     }
   
@@ -54,7 +53,7 @@ const RegistrationForm = () => {
       ...formData,
       [name]: value,
     });
-  };
+  }
 
   return (
     <section className="p-8 bg-blue-200 mt-4 flex flex-col items-center ">
@@ -81,7 +80,7 @@ const RegistrationForm = () => {
     type="email"
     name="email"
     value={formData.email}
-    onChange={handleemail}
+    onChange={handleEmail}
     placeholder="Email"
     className="p-2 border border-gray-300 rounded"
   />
