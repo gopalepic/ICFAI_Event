@@ -34,25 +34,28 @@ const RegistrationForm = () => {
             console.error("An error occurred:", error);
             alert('Please Enter The Valid mail.');
         });
-        const handleChange = (e) => {
-          const { name, value } = e.target;
-        
-          // Check if the email input is the one being changed
-          if (name === 'email') {
-            // Validate that the email ends with .iujaipur.edu.in
-            if (!value.endsWith('.iujaipur.edu.in')) {
-              // Optionally, show an error message or adjust the input style
-              console.log('Email must end with .iujaipur.edu.in');
-            }
-          }
-        
-          // Update the form data
-          setFormData({
-            ...formData,
-            [name]: value,
-          });
-        };
+       
   };
+
+  const handleemail = (e) => {
+    const { name, value } = e.target;
+  
+    // Check if the email input is the one being changed
+    if (name === 'email') {
+      // Validate that the email ends with .iujaipur.edu.in
+      if (!value.endsWith('@iujaipur.edu.in')) {
+        // Optionally, show an error message or adjust the input style
+        console.log('Email must end with .iujaipur.edu.in');
+      }
+    }
+  
+    // Update the form data
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <section className="p-8 bg-blue-200 mt-4 flex flex-col items-center ">
       <h2 className="text-2xl font-bold mb-4">Registration Form</h2>
@@ -73,16 +76,16 @@ const RegistrationForm = () => {
           placeholder="Branch" 
           className="p-2 border border-gray-300 rounded"
         />
-        return (
+       
   <input
     type="email"
     name="email"
     value={formData.email}
-    onChange={handleChange}
+    onChange={handleemail}
     placeholder="Email"
     className="p-2 border border-gray-300 rounded"
   />
-);
+
         <input 
           type="number" 
           name="contact" 
