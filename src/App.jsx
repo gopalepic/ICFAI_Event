@@ -5,6 +5,7 @@ import Rules from './components/rules';
 import Announce from './components/announce';
 import RegistrationForm from './components/registrationform'
 import Footer from './components/footer';
+import Headpage from './components/head';
 
 
 
@@ -12,11 +13,26 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      
+
       <Header />
+      <div id="rules">
+
+         {/* <div id="home">
+      <Headpage />
+      </div>  */}
       <Rules />
+      </div>
+      <div id="announce">
       <Announce />
+      </div>
+      <div id="registration">
       <RegistrationForm />
-      <Footer />
+      </div>
+      <div id="contact">
+              <Footer />
+              </div>
+
     </div>
   );
 }
