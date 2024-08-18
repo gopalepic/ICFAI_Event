@@ -19,7 +19,7 @@ const RegistrationForm = () => {
     
    const response = axios.post('https://icfai-event-backend.onrender.com/register', formData)
    console.log(response)
-          if(response.status === 201){
+          if(response.status === 200){
             alert('Registration complete!');
             // Optionally clear the form data
             setFormData({
