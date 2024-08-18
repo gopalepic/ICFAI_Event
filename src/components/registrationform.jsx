@@ -14,36 +14,30 @@ const RegistrationForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
     
-   const response = axios.post('https://icfai-event-backend.onrender.com/register', formData)
-   
-          if(response.status === 200){
-           
-            // Optionally clear the form data
-            setFormData({
-                name: '',
-                branch: '',
-                email: '',
-                contact: '',
-                teamName: '',
-            });
-            if(setFormData ){
-              alert("U r epic but not also") 
-                       }
-             else{
-                        alert("No no no")
-                   }
-
-            alert('Registration complete!');
-          
-           
-        }
-      else{
+    try {
+      const response = await axios.post('https://icfai-event-backend.onrender.com/register', formData)
+      
+      if(response.status === 201){
+        // Optionally clear the form data
+        setFormData({
+          name: '',
+          branch: '',
+          email: '',
+          contact: '',
+          teamName: '',
+        });
+        alert('Registration complete!');
+      } else {
         alert("Having problems");
       }
-      
+    } catch (error) {
+      console.error(error);
+      alert("Error occurred");
+    }
+  };
 
   };
   return(
@@ -97,7 +91,7 @@ const RegistrationForm = () => {
 </section>
 
   
-)};
+);
 
 
 export default RegistrationForm;
