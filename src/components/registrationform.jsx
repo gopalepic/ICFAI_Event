@@ -79,7 +79,7 @@ const RegistrationForm = () => {
       placeholder="Team Name" 
       className="p-2 border border-gray-300 rounded w-full"
     />
-    <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 w-full">
+    <button type="submit" className="bg-blue-600 text-white p-2 rounded hover:bg-blue-600 w-full">
       Submit
     </button>
   </form>
