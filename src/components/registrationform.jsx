@@ -17,7 +17,7 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission
     
-    axios.post('http://localhost:5000/register', formData)
+    axios.post('https://icfai-event-backend.vercel.app/register', formData)
         .then(response => {
             alert('Registration complete!');
             // Optionally clear the form data
