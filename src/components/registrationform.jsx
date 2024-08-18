@@ -18,9 +18,9 @@ const RegistrationForm = () => {
     e.preventDefault(); // Prevent default form submission
     
    const response = axios.post('https://icfai-event-backend.onrender.com/register', formData)
-   console.log(response)
+   
           if(response.status === 200){
-            alert('Registration complete!');
+           
             // Optionally clear the form data
             setFormData({
                 name: '',
@@ -29,8 +29,16 @@ const RegistrationForm = () => {
                 contact: '',
                 teamName: '',
             });
+            if(setFormData ){
+              alert("U r epic but not also") 
+                       }
+             else{
+                        alert("No no no")
+                   }
+
+            alert('Registration complete!');
           
-            // Avoid page reload; update state or route if needed
+           
         }
       else{
         alert("Having problems");
