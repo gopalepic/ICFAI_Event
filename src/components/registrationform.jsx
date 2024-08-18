@@ -17,8 +17,9 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission
     
-    axios.post('https://icfai-event-backend.vercel.app/register', formData)
-        .then(response => {
+   const response = axios.post('https://icfai-event-backend.vercel.app:5000/register', formData)
+   console.log(response)
+          if(response.status === 201){
             alert('Registration complete!');
             // Optionally clear the form data
             setFormData({
@@ -28,12 +29,14 @@ const RegistrationForm = () => {
                 contact: '',
                 teamName: '',
             });
+          
             // Avoid page reload; update state or route if needed
-        })
-        .catch(error => {
-            console.error("An error occurred:", error);
-            alert('An error occurred during registration.');
-        });
+        }
+      else{
+        alert("Having problems");
+      }
+      
+
   };
   return(
   <section className="p-4 sm:p-8 bg-blue-200 mt-4 flex flex-col items-center">
