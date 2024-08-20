@@ -18,7 +18,7 @@ const RegistrationForm = () => {
     e.preventDefault(); // Prevent default form submission
   
     try {
-      console.log("HI a")
+      
       const response = await axios.post('https://icfai-event-backend.onrender.com/register', formData);
   
       if (response.status === 200) {
