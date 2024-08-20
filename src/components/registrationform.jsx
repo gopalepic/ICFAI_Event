@@ -16,11 +16,12 @@ const RegistrationForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
-    
+  
     try {
-      const response = await axios.post('https://icfai-event-backend.onrender.com/register', formData)
-      
-      if(response.status === 201){
+      console.log("HI a")
+      const response = await axios.post('https://icfai-event-backend.onrender.com/register', formData);
+  
+      if (response.status === 200) {
         // Optionally clear the form data
         setFormData({
           name: '',
@@ -38,9 +39,11 @@ const RegistrationForm = () => {
       alert("Error occurred");
     }
   };
-
-  };
+  
+  
   return(
+
+
   <section className="p-4 sm:p-8 bg-blue-200 mt-4 flex flex-col items-center">
   <h2 className="text-xl sm:text-2xl font-bold mb-4">Registration Form</h2>
   <form onSubmit={handleSubmit} className="grid gap-4 w-full sm:w-1/2 px-4">
@@ -92,6 +95,6 @@ const RegistrationForm = () => {
 
   
 );
-
+}
 
 export default RegistrationForm;
