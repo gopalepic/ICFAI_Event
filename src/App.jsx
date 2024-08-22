@@ -5,6 +5,7 @@ import Rules from './components/rules';
 import Announce from './components/announce';
 import RegistrationForm from './components/registrationform'
 import Footer from './components/footer';
+import Task from './components/task';
 import Headpage from './components/head';
 
 
@@ -22,6 +23,9 @@ function App() {
       <Headpage />
       </div>  */}
       <Rules />
+      </div>
+      <div id="task">
+        <Task/>
       </div>
       <div id="announce">
       <Announce />
