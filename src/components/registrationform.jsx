@@ -24,7 +24,7 @@ const RegistrationForm = () => {
 
     try {
       
-      if (!formData.name || !formData.branch || !formData.email || !formData.teamName) {
+      if (!formData.name || !formData.branch || !formData.email || !formData.teamName || !formData.contact) {
         alert("Please fill all details");
         return;
       }
