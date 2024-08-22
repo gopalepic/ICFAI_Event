@@ -9,7 +9,7 @@ const Footer = () => {
 
 
       
-      <p>devploved by @Himanshu Gupta</p>
+      <p>developed by @Himanshu Gupta</p>
       <p>Hosted by @Gopal Soni</p>
     </footer>
   );

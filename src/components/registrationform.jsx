@@ -24,6 +24,11 @@ const RegistrationForm = () => {
 
     try {
       
+      if (!formData.name || !formData.branch || !formData.email || !formData.teamName) {
+        alert("Please fill all details");
+        return;
+      }
+      
       const response = await axios.post('https://icfai-event-backend.onrender.com/register', formData);
   
       if (response.status === 200) {
@@ -61,9 +66,7 @@ const RegistrationForm = () => {
     isSubmitting ? 
 
  <Loadingpage/>
-  
    : 
-
    <form onSubmit={handleSubmit} className="grid gap-4 w-full sm:w-1/2 px-4">
     <input 
       type="text" 
