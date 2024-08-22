@@ -4,7 +4,6 @@ import Loadingpage from  '../loadingpage';
 
 const RegistrationForm = () => {
 
-
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -22,8 +21,9 @@ const RegistrationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
     setIsSubmitting(true); // Set isSubmitting to true when the submit button is clicked
-  
+
     try {
+      
       const response = await axios.post('https://icfai-event-backend.onrender.com/register', formData);
   
       if (response.status === 200) {
@@ -35,6 +35,7 @@ const RegistrationForm = () => {
           contact: '',
           teamName: '',
         });
+
   
         alert('Registration complete!');
       } else {
@@ -45,9 +46,14 @@ const RegistrationForm = () => {
       alert("Error registering");
     } finally {
       setIsSubmitting(false); // Set isSubmitting to false when the request is complete
+
     }
   };
+  
+  
   return(
+
+
   <section className="p-4 sm:p-8 bg-blue-200 mt-4 flex flex-col items-center">
   <h2 className="text-xl sm:text-2xl font-bold mb-4">Registration Form</h2>
 
@@ -110,7 +116,7 @@ const RegistrationForm = () => {
 </section>
 
   
-)};
-
+);
+}
 
 export default RegistrationForm;
