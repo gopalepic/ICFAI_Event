@@ -57,9 +57,10 @@ const RegistrationForm = () => {
   
   
   return(
+    
 
 
-  <section className="p-4 sm:p-8 bg-blue-200 mt-4 flex flex-col items-center">
+  <section className="p-4 sm:p-8 bg-blue-200 mt-4 flex flex-col items-center ">
   <h2 className="text-xl sm:text-2xl font-bold mb-4">Registration Form</h2>
 
   {
