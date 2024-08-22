@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Loadingpage from  '../loadingpage';
 
 const RegistrationForm = () => {
+
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     branch: '',
@@ -14,42 +19,46 @@ const RegistrationForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
-    
-   const response = axios.post('https://icfai-event-backend.onrender.com/register', formData)
-   
-          if(response.status === 200){
-           
-            // Optionally clear the form data
-            setFormData({
-                name: '',
-                branch: '',
-                email: '',
-                contact: '',
-                teamName: '',
-            });
-            if(setFormData ){
-              alert("U r epic but not also") 
-                       }
-             else{
-                        alert("No no no")
-                   }
-
-            alert('Registration complete!');
-          
-           
-        }
-      else{
-        alert("Having problems");
+    setIsSubmitting(true); // Set isSubmitting to true when the submit button is clicked
+  
+    try {
+      const response = await axios.post('https://icfai-event-backend.onrender.com/register', formData);
+  
+      if (response.status === 200) {
+        // Optionally clear the form data
+        setFormData({
+          name: '',
+          branch: '',
+          email: '',
+          contact: '',
+          teamName: '',
+        });
+  
+        alert('Registration complete!');
+      } else {
+        alert("Registration incomplete");
       }
-      
-
+    } catch (error) {
+      console.error(error);
+      alert("Error registering");
+    } finally {
+      setIsSubmitting(false); // Set isSubmitting to false when the request is complete
+    }
   };
   return(
   <section className="p-4 sm:p-8 bg-blue-200 mt-4 flex flex-col items-center">
   <h2 className="text-xl sm:text-2xl font-bold mb-4">Registration Form</h2>
-  <form onSubmit={handleSubmit} className="grid gap-4 w-full sm:w-1/2 px-4">
+
+  {
+    isSubmitting ? 
+
+ <Loadingpage/>
+  
+   : 
+
+   <form onSubmit={handleSubmit} className="grid gap-4 w-full sm:w-1/2 px-4">
     <input 
       type="text" 
       name="name" 
@@ -90,10 +99,14 @@ const RegistrationForm = () => {
       placeholder="Team Name" 
       className="p-2 border border-gray-300 rounded w-full"
     />
+
+
     <button type="submit" className="bg-blue-600 text-white p-2 rounded hover:bg-blue-600 w-full">
       Submit
     </button>
+    
   </form>
+}
 </section>
 
   

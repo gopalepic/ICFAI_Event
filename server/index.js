@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const Registration = require('./models/datamodel'); // Corrected import
+app.use(cors({ origin: 'http://localhost:5173' }));
+
 
 const app = express();
 
