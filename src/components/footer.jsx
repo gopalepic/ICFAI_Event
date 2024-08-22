@@ -6,8 +6,6 @@ const Footer = () => {
       <p>&copy; 2024 Inter College Hackathon, Organised by Innozenta Club.</p>
       <p>Organiser Team: Himanshu & Team</p>
       <p>Contact: 8000739398</p>
-
-
       
       <p>developed by @Himanshu Gupta</p>
       <p>Hosted by @Gopal Soni</p>
