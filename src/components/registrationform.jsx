@@ -43,7 +43,7 @@ const RegistrationForm = () => {
       }
     } catch (error) {
       console.error(error);
-      alert("Error registering");
+      alert("Registration incomplete");
     } finally {
       setIsSubmitting(false); // Set isSubmitting to false when the request is complete
 
