@@ -1,8 +1,8 @@
 import React from "react";
 const Task = () => {
     return(
-    <section className="p-8 bg-blue-200">
-<h1 className="text-2xl font-bold mb-42"> 
+    <section className="p-8 bg-blue-200 mt-4">
+<h1 className="text-2xl mb-42"> 
     PROBLEM STATEMENTS AND PRIZES TO BE WON</h1>
 <p>1.SIH2024 brings you problem statements from leading public and private organizations, union
 ministries, state governments and NGOs in India.</p>
