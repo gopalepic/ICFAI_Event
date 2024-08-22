@@ -1,9 +1,10 @@
 import React from "react";
 const Task = () => {
     return(
-    <section className="p-8 bg-blue-200">
+    <section className=" my-3 p-3 bg-blue-200">
 <h1 className="text-2xl font-bold mb-42"> 
-    PROBLEM STATEMENTS AND PRIZES TO BE WON</h1>
+    PROBLEM STATEMENTS AND PRIZES TO BE WON
+    </h1>
 <p>1.SIH2024 brings you problem statements from leading public and private organizations, union
 ministries, state governments and NGOs in India.</p>
 <p>2.There would be ONE single winning team for every problem statement posted on the portal. The
