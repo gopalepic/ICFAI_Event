@@ -1,9 +1,14 @@
 import React from "react";
 const Task = () => {
     return(
-    <section className="p-8 bg-blue-200 mt-4">
-<h1 className="text-2xl mb-42"> 
-    PROBLEM STATEMENTS AND PRIZES TO BE WON</h1>
+    <section className="p-9 bg-blue-200 mt-5">
+<h1 className="text-2xl mb-42"> <b>
+    PROBLEM STATEMENTS AND PRIZES TO BE WON
+    </b>
+    
+    </h1>
+    <p className="text-gray-700"><br />
+
 <p>1.SIH2024 brings you problem statements from leading public and private organizations, union
 ministries, state governments and NGOs in India.</p>
 <p>2.There would be ONE single winning team for every problem statement posted on the portal. The
@@ -16,6 +21,7 @@ ideas are up-to-the-mark, they may not announce any win</p>
 under ‘Students Innovation’ category. Please note that only 100 teams’ max (Including theme
 based/Student Innovation) are allowed from one college</p>
 <p> Prize money for student innovation category will be Rs. 100,000/- per theme.</p>
+</p>
 <button className="mt-4 sm:mt-8 bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 text-lg rounded-full hover:bg-black">
   <a
     href="https://www.sih.gov.in/sih2024PS?technology_bucket=QWxs&category=U29mdHdhcmU=&organization=QWxs&organization_type=QWxs"
