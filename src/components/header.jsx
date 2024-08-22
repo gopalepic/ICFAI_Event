@@ -2,6 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
+    
     <div className="relative h-screen overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -23,6 +24,7 @@ const Header = () => {
         </button>
       </div>
     </div>
+   
   );
 };
 

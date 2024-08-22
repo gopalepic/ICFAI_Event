@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Loadingpage from  '../loadingpage';
 
+const Branchh = ['Select','BTech-CSE','BTech-AI&DS','BCA-Gen','BCA-DS','BCA-AI','BCA-CYBER','MCA']
+
 const RegistrationForm = () => {
+
+
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -77,19 +81,22 @@ const RegistrationForm = () => {
       placeholder="Student Name" 
       className="p-2 border border-gray-300 rounded w-full"
     />
-    <input 
-      type="text" 
-      name="branch" 
-      value={formData.branch} 
-      onChange={handleChange} 
-      placeholder="Branch" 
-      className="p-2 border border-gray-300 rounded w-full"
-    />
+   <select
+  name="branch"
+  value={formData.branch}
+  onChange={handleChange}
+  placeholder="Branch"
+  className="p-2 border border-gray-300 rounded w-full"
+>
+  {Branchh.map((branch) => (
+    <option  value={branch}>{branch}</option>
+  ))}
+</select>
     <input 
       type="email" 
       name="email" 
       value={formData.email} 
-      onChange={handleChange} 
+      onChange={handleChange}
       placeholder="Email" 
       className="p-2 border border-gray-300 rounded w-full"
     />
