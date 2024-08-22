@@ -64,7 +64,7 @@ const Footer = () => {
 
         <li>
           <a
-            href="#"
+            href="https://www.instagram.com/icfaitech_jaipur/"
             rel="noreferrer"
             target="_blank"
             className="text-gray-700 transition hover:opacity-75"
