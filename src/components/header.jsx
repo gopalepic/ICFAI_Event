@@ -5,7 +5,7 @@ const Header = () => {
     
     <div className="relative h-screen overflow-hidden">
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover bg-blue-600"
        src="/bg22.mp4"
         autoPlay
         loop
