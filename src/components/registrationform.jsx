@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Loadingpage from  '../loadingpage';
 
-const Branchh = ['Select','BTech-CSE','BTech-AI&DS','BCA-Gen','BCA-DS','BCA-AI','BCA-CYBER','MCA']
+const Branchh = ['Select Branch','BTech-CSE','BTech-AI&DS','BCA-Gen','BCA-DS','BCA-AI','BCA-CYBER','MCA']
 
 const RegistrationForm = () => {
 
