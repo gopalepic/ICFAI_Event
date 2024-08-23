@@ -12,8 +12,8 @@ const Footer = () => {
       <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl">&copy; 2024 Inter College Hackathon, Organised by Innozenta Club.</h2>
 
       <p className="mx-auto mt-4 max-w-sm text-gray-500">
-         <p>Himanshu gupta : 8000739398 </p>
-         <p> Gopal soni : 7014892187</p> 
+         <p>Himanshu gupta: 8000739398 </p>
+         <p> Gopal soni: 7014892187</p> 
       </p>
     </div>
 
