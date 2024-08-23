@@ -1,6 +1,7 @@
 import React from 'react'
 const loadingpage = () => {
   return (
+    <div className='flex flex-col items-center'>
     <div role="status">
       <svg
         aria-hidden="true"
@@ -18,7 +19,10 @@ const loadingpage = () => {
           fill="currentFill"
         />
       </svg>
-      <span className="sr-only">Loading...</span>
+      
+    </div>
+    
+    <span className="text-center md:-pl-4">Please Wait We are processing your Requiest..........</span>
     </div>
   )
 }
