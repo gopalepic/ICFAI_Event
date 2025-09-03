@@ -1,12 +1,13 @@
 import React from "react";
 
+
 const Header = () => {
   return (
     
     <div className="relative h-screen overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover bg-blue-600"
-       src="/bg22.mp4"
+       src="/public/new.mp4"
         autoPlay
         loop
         muted

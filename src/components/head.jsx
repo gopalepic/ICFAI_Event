@@ -28,7 +28,8 @@ const Head = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center min-h-screen text-white bg-black">
+    <div className="flex flex-col items-center min-h-screen text-white "
+    style={{ backgroundColor: '#36097A'}}>
       <div className="space-30vh lightBG"></div>
       <div className="raceWrapper overflow-hidden">
         <div className="races flex space-x-4 text-6xl text-blue-800 font-bold mb-10 whitespace-nowrap">
