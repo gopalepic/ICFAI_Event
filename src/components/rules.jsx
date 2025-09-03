@@ -2,6 +2,7 @@ import React from "react";
 
 const Rules = () => {
     return(
+        <div className="">
     <section className="p-8 bg-blue-200">
         <h2 className="text-2xl font-bold mb-4">Rules & Regulation</h2>
         < p
@@ -28,6 +29,7 @@ const Rules = () => {
 
 
     </section>
+    </div>
     );
 };
 export default Rules;

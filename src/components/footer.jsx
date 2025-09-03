@@ -6,14 +6,14 @@ import { IoLogoLinkedin } from "react-icons/io5";
 const Footer = () => {
   return (
 
-    <footer className="bg-[#bfdbfe] mt-3">
+    <footer className="bg-[#0a1625] mt-3">
   <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
     <div className="text-center">
-      <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl">&copy; 2024 Inter College Hackathon, Organised by Innozenta Club.</h2>
+      <h2 className="text-3xl font-extrabold text-white sm:text-5xl">&copy; 2025 Inter College Hackathon, Organised by Innozenta Club.</h2>
 
       <p className="mx-auto mt-4 max-w-sm text-gray-500">
          <p>Himanshu gupta: 8000739398 </p>
-         <p> Gopal soni: 7014892187</p> 
+         <p> </p> 
       </p>
     </div>
 
@@ -34,13 +34,7 @@ const Footer = () => {
          </a>
         </li>
 
-        <li>
-          <a href="https://www.linkedin.com/in/gopal-soniepic/" target='blank' className="text-gray-500 transition hover:opacity-75 text-base"> 
-          <div className='flex items-center '>
-             <IoLogoLinkedin className='text-xl' />
-         Gopal Soni 
-          </div> </a>
-        </li>
+        
       </ul>
 
       <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
