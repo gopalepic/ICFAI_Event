@@ -1,15 +1,15 @@
 import React from "react";
 const Task = () => {
     return(
-    <section className="p-9 bg-blue-200 mt-5">
-<h1 className="text-2xl mb-42"> <b>
+    <section className="p-9 bg-[#0a1625] mt-5">
+<h1 className="text-2xl text-white mb-42"> <b>
     PROBLEM STATEMENTS AND PRIZES TO BE WON
     </b>
     
     </h1>
-    <p className="text-gray-700"><br />
+    <p className="text-white"><br />
 
-<p>1. SIH2024 brings you problem statements from leading public and private organizations, union
+<p>1. SIH2025 brings you problem statements from leading public and private organizations, union
 ministries, state governments and NGOs in India.</p>
 <p>2. There would be ONE single winning team for every problem statement posted on the portal. The
 prize money will be given by the collaborating ministry/ industry ONLY IF that organization likes

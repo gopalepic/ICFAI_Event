@@ -64,8 +64,8 @@ const RegistrationForm = () => {
     
 
 
-  <section className="p-4 sm:p-8 bg-blue-200 mt-4 flex flex-col items-center ">
-  <h2 className="text-xl sm:text-2xl font-bold mb-4">Registration Form</h2>
+  <section className="p-4 sm:p-8 bg-[#0a1625] mt-4 flex flex-col items-center ">
+  <h2 className="text-xl text-white sm:text-2xl font-bold mb-4">Registration Form</h2>
 
   {
     isSubmitting ? 

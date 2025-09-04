@@ -3,10 +3,10 @@ import React from "react";
 const Rules = () => {
     return(
         <div className="">
-    <section className="p-8 bg-blue-200">
-        <h2 className="text-2xl font-bold mb-4">Rules & Regulation</h2>
+    <section className="p-8 bg-[#0a1625]">
+        <h2 className="text-2xl text-white font-bold mb-4">Rules & Regulation</h2>
         < p
-        className="text-gray-700">1. All team members should be from the same college; no inter-college teams are allowed. However, members from different branches of the same college/institute are encouraged to form a team including Atleast one girl candidiate.
+        className="text-white">1. All team members should be from the same college; no inter-college teams are allowed. However, members from different branches of the same college/institute are encouraged to form a team including Atleast one girl candidiate.
 <p>2.  Each team must mandatorily comprise 6 members, including...</p>
 
 <p>3. For the Software Edition, after teams are shortlisted, each team will have the option of selecting 2 mentors from industry or academia.</p>
