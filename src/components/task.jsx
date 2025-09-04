@@ -24,7 +24,7 @@ based/Student Innovation) are allowed from one college.</p>
 </p>
 <button className="mt-4 sm:mt-8 bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 text-lg rounded-full hover:bg-black">
   <a
-    href="https://www.sih.gov.in/sih2024PS?technology_bucket=QWxs&category=U29mdHdhcmU=&organization=QWxs&organization_type=QWxs"
+    href="https://sih.gov.in/sih2025PS"
     target="_blank"
     rel="noopener noreferrer"
   >
